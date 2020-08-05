@@ -44,7 +44,7 @@ class App extends React.Component {
       <Container fluid>
         <Row>
           <Col>
-            Hi there
+            Header
           </Col>
         </Row>
         <Row>
@@ -52,12 +52,12 @@ class App extends React.Component {
             <Table striped bordered hover size="sm">
               <thead>
                 <tr>
-                  <th style={{ background: 'white', position: 'sticky', top: 0 }}>ID</th>
-                  <th style={{ background: 'white', position: 'sticky', top: 0 }}>First Name</th>
-                  <th style={{ background: 'white', position: 'sticky', top: 0 }}>Last Name</th>
-                  <th style={{ background: 'white', position: 'sticky', top: 0 }}>Email</th>
-                  <th style={{ background: 'white', position: 'sticky', top: 0 }}>Gender</th>
-                  <th style={{ background: 'white', position: 'sticky', top: 0 }}>IP Address</th>
+                  <th className='sticky-top bg-light text-center'>ID</th>
+                  <th className='sticky-top bg-light text-center'>First Name</th>
+                  <th className='sticky-top bg-light text-center'>Last Name</th>
+                  <th className='sticky-top bg-light text-center'>Email</th>
+                  <th className='sticky-top bg-light text-center'>Gender</th>
+                  <th className='sticky-top bg-light text-center'>IP Address</th>
                 </tr>
               </thead>
               <tbody>
@@ -73,6 +73,11 @@ class App extends React.Component {
                 )}
               </tbody>
             </Table>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            Footer
           </Col>
         </Row>
       </Container>
